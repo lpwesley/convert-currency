@@ -1,81 +1,59 @@
-# Convert - Conversor de Moedas
+# Convert · Conversor de Moedas
 
-Aplicação web desenvolvida durante meus estudos de **Desenvolvimento Front-end**, com foco na utilização de JavaScript para criação de interfaces interativas e manipulação do DOM.
+![Guiado com melhorias](https://img.shields.io/badge/🎓_Projeto-Guiado_+_Melhorias_próprias-8257e5?style=for-the-badge)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-O projeto permite converter valores de dólar americano (USD), euro (EUR) e libra esterlina (GBP) para real brasileiro (BRL), utilizando cotações fixas para fins educacionais.
+> **🎓 Projeto guiado com melhorias próprias:** a base foi desenvolvida acompanhando as aulas da **formação Full Stack da [Rocketseat](https://www.rocketseat.com.br/)**. Depois, por conta própria, melhorei organização, responsividade, acessibilidade e validação dos dados (detalhes abaixo).
 
-Desenvolvido com acompanhamento de aulas práticas, o projeto recebeu melhorias na organização dos arquivos, responsividade, acessibilidade e validação dos dados.
+Aplicação web que converte valores em dólar (USD), euro (EUR) e libra (GBP) para real (BRL), com formatação monetária no padrão brasileiro. Construída com HTML, CSS e JavaScript puro.
 
-## 📸 Prévia do projeto
+🔗 **[Ver projeto online](https://lpwesley.github.io/convert-currency/)**
+
+## 📸 Prévia
 
 ![Prévia do conversor de moedas Convert](./img/preview-convert.png)
 
-## 🛠️ Tecnologias utilizadas
+## 🛠️ Tecnologias
 
-- **HTML5:** estruturação da página e criação do formulário.
-- **CSS3:** estilização, Flexbox, responsividade e organização modular dos estilos.
-- **JavaScript:** manipulação do DOM, eventos, validação de dados e conversão de valores.
-- **Git:** controle de versão do projeto.
-- **GitHub Pages:** publicação da aplicação na web.
+- **HTML5:** estrutura e formulário
+- **CSS3:** Flexbox, variáveis CSS e Media Queries
+- **JavaScript:** manipulação do DOM, eventos e validação
+- **Git e GitHub Pages:** versionamento e publicação
 
-## ⚙️ Características do projeto
+## ⚙️ Funcionalidades
 
-- Conversão de dólar americano, euro e libra esterlina para reais.
-- Interface interativa utilizando JavaScript.
-- Validação de valores informados pelo usuário.
-- Formatação monetária no padrão brasileiro.
-- Exibição da cotação utilizada e do resultado da conversão.
-- Layout responsivo desenvolvido com abordagem Mobile First.
-- Organização dos estilos em arquivos CSS separados.
-- Aplicação de boas práticas de acessibilidade.
-- Navegação por teclado com indicadores visuais de foco.
-- Tratamento de erros durante a conversão.
+- Conversão de USD, EUR e GBP para BRL
+- Exibição da cotação usada e do resultado formatado em reais
+- Validação do valor digitado pelo usuário
+- Tratamento de erros durante a conversão
+- Layout responsivo e navegação por teclado com foco visível
 
-## 📚 Aprendizados
+## 🚀 O que fiz além da aula
 
-Durante o desenvolvimento do Convert, pude praticar conceitos fundamentais de HTML, CSS e, principalmente, JavaScript, compreendendo melhor como criar interações entre o usuário e a interface.
+| Melhoria | O que mudou |
+|---|---|
+| **Organização** | Estilos divididos em arquivos por responsabilidade (`button`, `forms`, `footer`, `main`, `global`) |
+| **Responsividade** | Layout refeito com abordagem mobile-first e Media Queries |
+| **Acessibilidade** | Indicadores de foco visíveis e navegação completa por teclado |
+| **Validação** | Expressão regular para aceitar apenas valores válidos e `try...catch` para tratar erros |
 
-### HTML e estruturação
+## 📚 O que pratiquei
 
-- Construção e organização de formulários.
-- Utilização de elementos semânticos.
-- Associação de labels aos campos do formulário.
-- Aplicação de atributos para melhorar a acessibilidade.
-- Estruturação de uma página para receber interações com JavaScript.
+**JavaScript**
+- Seleção de elementos com `querySelector()` e `getElementById()`
+- Eventos com `addEventListener()` e manipulação com `textContent` e `classList`
+- Funções reutilizáveis, `switch` e conversão de tipos com `Number()`
+- Formatação de moeda com `toLocaleString()`
+- Validação com expressões regulares e tratamento de erros com `try...catch`
 
-### CSS e responsividade
+**HTML e CSS**
+- Formulário semântico com `label` associado aos campos
+- Flexbox, variáveis CSS e estados de foco e interação
+- Separação entre estrutura, estilo e comportamento
 
-- Utilização de Flexbox para alinhamento dos elementos.
-- Aplicação de variáveis CSS para padronização visual.
-- Organização dos estilos em arquivos separados.
-- Desenvolvimento responsivo com Mobile First.
-- Utilização de Media Queries.
-- Implementação de estados de foco e interação.
-- Adaptação da interface para diferentes tamanhos de tela.
-
-### JavaScript e interatividade
-
-- Seleção de elementos HTML com `querySelector()` e `getElementById()`.
-- Manipulação do DOM com `textContent` e `classList`.
-- Captura de eventos com `addEventListener()`.
-- Utilização de funções e parâmetros.
-- Aplicação de estruturas condicionais com `switch`.
-- Validação e tratamento de entradas do usuário.
-- Utilização de expressões regulares.
-- Conversão de tipos com `Number()`.
-- Formatação de moedas com `toLocaleString()`.
-- Tratamento de erros com `try...catch`.
-
-### Boas práticas
-
-- Separação entre estrutura, estilo e comportamento.
-- Organização de pastas e arquivos.
-- Utilização de nomes descritivos para variáveis e funções.
-- Reutilização de funções para evitar repetição de código.
-- Aplicação de conceitos básicos de acessibilidade e SEO.
-- Versionamento do projeto com Git e GitHub.
-
-## 📂 Estrutura do projeto
+## 📂 Estrutura
 
 ```text
 convert-currency/
@@ -87,50 +65,28 @@ convert-currency/
 │   ├── main.css
 │   └── style.css
 ├── img/
-│   ├── bg.png
-│   ├── check.svg
-│   ├── chevron-down.svg
-│   ├── logo.svg
-│   └── preview-convert.png
 ├── index.html
 ├── scripts.js
 └── README.md
 ```
 
-## 💻 Como executar localmente
+## 💻 Como executar
 
-O projeto utiliza HTML, CSS e JavaScript puro, sem necessidade de instalação de dependências.
-
-**1. Clone o repositório:**
+Não há dependências. Basta clonar e abrir no navegador:
 
 ```bash
 git clone https://github.com/lpwesley/convert-currency.git
-```
-
-**2. Acesse a pasta do projeto:**
-
-```bash
 cd convert-currency
 ```
 
-**3. Execute o projeto:**
+Abra o `index.html` no navegador ou use a extensão **Live Server** no VS Code.
 
-Abra o arquivo `index.html` diretamente no navegador ou utilize a extensão **Live Server** no Visual Studio Code.
-
-## 📝 Observações
-
-Este projeto foi desenvolvido para fins educacionais, utilizando cotações fixas definidas no JavaScript.
-
-Os valores apresentados não representam necessariamente as taxas de câmbio atuais e não devem ser utilizados para operações financeiras reais.
-
-A implementação inicial foi realizada com acompanhamento de aulas, seguida de melhorias voltadas à organização, responsividade, acessibilidade e manutenção do código.
+> ⚠️ As cotações são fixas no código, para fins de estudo. Não use os valores para operações reais.
 
 ## 🎓 Créditos
 
-Projeto desenvolvido com base em aulas práticas de desenvolvimento Front-end, com adaptações e melhorias realizadas durante meus estudos.
+Projeto base proposto pela **[Rocketseat](https://www.rocketseat.com.br/)** como parte da formação Full Stack. As melhorias listadas em "O que fiz além da aula" foram feitas por mim.
 
 ---
 
-Desenvolvido por **Wesley Lauwer**.
-
-[GitHub](https://github.com/lpwesley)
+Desenvolvido por **Wesley Lauwer** · [GitHub](https://github.com/lpwesley)
