@@ -1,0 +1,14 @@
+/* ========================================
+   CONTAINER PRINCIPAL
+======================================== */
+
+main {
+  width: 100%;
+  max-width: 30rem;
+  min-width: 0;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  overflow: hidden;
+}

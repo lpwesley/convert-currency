@@ -1,0 +1,64 @@
+/* ========================================
+   RESULTADO DA CONVERSÃO
+======================================== */
+
+footer {
+  display: none;
+
+  padding: 2rem 1rem;
+
+  background-color: var(--color-surface-secondary);
+
+  text-align: center;
+}
+
+/* Exibe o resultado após a conversão */
+footer.show-result {
+  display: block;
+}
+
+/* ========================================
+   DESCRIÇÃO DA COTAÇÃO
+======================================== */
+
+footer span {
+  display: block;
+
+  margin-bottom: 0.5rem;
+
+  color: var(--color-text-accent);
+
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.5;
+
+  overflow-wrap: anywhere;
+}
+
+/* ========================================
+   VALOR CONVERTIDO
+======================================== */
+
+footer h1 {
+  color: var(--color-text-primary);
+
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-weight: 700;
+  line-height: 1.4;
+
+  overflow-wrap: anywhere;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (min-width: 48rem) {
+  footer {
+    padding: 2.5rem;
+  }
+
+  footer span {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,110 @@
+/* ========================================
+   FORMULÁRIO
+======================================== */
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem 1.5rem;
+
+  background-color: var(--color-surface);
+}
+
+/* ========================================
+   LABELS
+======================================== */
+
+label {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+
+  color: var(--color-text-secondary);
+
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5;
+
+  text-transform: uppercase;
+}
+
+/* ========================================
+   CAMPOS
+======================================== */
+
+input,
+select {
+  width: 100%;
+  min-width: 0;
+  min-height: 3.5rem;
+
+  padding: 1rem;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  transition: border-color 0.2s ease;
+}
+
+/* ========================================
+   PLACEHOLDER
+======================================== */
+
+input::placeholder,
+select:invalid {
+  color: var(--color-text-secondary);
+}
+
+/* ========================================
+   ESTADOS DE FOCO
+======================================== */
+
+input:focus,
+select:focus {
+  border-color: var(--color-border-focus);
+}
+
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-text-primary);
+  outline-offset: 2px;
+}
+
+/* ========================================
+   SELECT
+======================================== */
+
+select {
+  appearance: none;
+
+  padding-right: 2.5rem;
+
+  background-image: url("../img/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1.25rem;
+
+  cursor: pointer;
+}
+
+select option {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+}
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (min-width: 48rem) {
+  form {
+    padding: 3.5rem 4rem;
+  }
+}

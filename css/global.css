@@ -1,0 +1,107 @@
+/* ========================================
+   RESET
+======================================== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========================================
+   VARIÁVEIS GLOBAIS
+======================================== */
+
+:root {
+  /* Cores */
+  --color-background: #0e0f25;
+  --color-surface: #141534;
+  --color-surface-secondary: #1f2151;
+
+  --color-border: #2f3279;
+  --color-border-focus: #4a5dcd;
+
+  --color-primary: #2f34ab;
+  --color-primary-hover: #4a5dcd;
+
+  --color-text-primary: #f1f2f6;
+  --color-text-secondary: #b2b8de;
+  --color-text-accent: #a5b2ff;
+
+  /* Tipografia */
+  --font-primary: "Roboto", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  /* Bordas */
+  --radius-sm: 0.5rem;
+  --radius-lg: 1.5rem;
+
+  font-family: var(--font-primary);
+  font-size: 100%;
+
+  color-scheme: dark;
+}
+
+/* ========================================
+   BASE
+======================================== */
+
+html {
+  min-width: 0;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  padding: 2rem 1rem;
+
+  background-color: var(--color-background);
+  background-image: url("../img/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: var(--color-text-primary);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 2.5rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (min-width: 48rem) {
+  body {
+    gap: 3.125rem;
+    padding: 3rem 1.5rem;
+  }
+}
+
+/* ========================================
+   ACESSIBILIDADE
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
